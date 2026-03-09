@@ -31,7 +31,7 @@ namespace DA
                 Precio = vehiculo.Precio,
                 CorreoPropietrario = vehiculo.CorreoPropietrario,
                 TelefonoPropietairo = vehiculo.TelefonoPropietairo
-            });
+            }); 
             return resultadoConsulta;
         }
 
