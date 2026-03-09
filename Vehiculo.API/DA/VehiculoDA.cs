@@ -30,7 +30,7 @@ namespace DA
                 Anio = vehiculo.Anio,
                 Precio = vehiculo.Precio,
                 CorreoPropietrario = vehiculo.CorreoPropietrario,
-                TelefonoPropietair = vehiculo.TelefonoPropietairo
+                TelefonoPropietairo = vehiculo.TelefonoPropietairo
             });
             return resultadoConsulta;
         }
@@ -48,7 +48,7 @@ namespace DA
                 Anio = vehiculo.Anio,
                 Precio = vehiculo.Precio,
                 CorreoPropietrario = vehiculo.CorreoPropietrario,
-                TelefonoPropietair = vehiculo.TelefonoPropietairo
+                TelefonoPropietairo = vehiculo.TelefonoPropietairo
             });
             return resultadoConsulta;
         }
