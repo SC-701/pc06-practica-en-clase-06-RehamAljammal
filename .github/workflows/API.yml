@@ -30,6 +30,7 @@ on:
    
     paths-ignore:
       - 'Vehiculo.API/BD/**'
+      - 'Vehiculos.Web/**'
   workflow_dispatch:
 
 permissions:

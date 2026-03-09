@@ -21,7 +21,7 @@ namespace DA
         #region Operaciones
         public async Task<Guid> Agregar(VehiculoRequest vehiculo)
         {
-            string query = @"AgregarVehiculo";
+            string query = @"AgregarVehiculos";
             var resultadoConsulta =await _sqlConnection.ExecuteScalarAsync<Guid>(query, new {
                 Id = Guid.NewGuid(),
                 IdModelo = vehiculo.IdModelo,
@@ -37,7 +37,7 @@ namespace DA
 
         public async Task<Guid> Editar(Guid Id, VehiculoRequest vehiculo)
         {
-            string query = @"EditarVehiculo";
+            string query = @"EditarVehiculos";
             await verificarVehiculoExiste(Id);
             var resultadoConsulta = await _sqlConnection.ExecuteScalarAsync<Guid>(query, new
             {
@@ -57,7 +57,7 @@ namespace DA
         public async Task<Guid> Eliminar(Guid Id)
         {
             await verificarVehiculoExiste(Id);
-            string query = @"EliminarVehiculo";
+            string query = @"EliminarVehiculos";
             var resultadoConsulta = await _sqlConnection.ExecuteScalarAsync<Guid>(query, new
             {
                 Id = Id
